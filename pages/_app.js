@@ -20,6 +20,8 @@ export default function MyApp(props) {
         <React.Fragment>
             <Head>
                 <title>Yaacob Martinez</title>
+                <meta name="description"
+                    content="I am Yaacob Martinez.  I’m a creative, ambitious, and enterprising  web developer. " />
                 <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
             </Head>
             <ThemeProvider theme={theme}>
