@@ -6,7 +6,7 @@ import { container, item } from '../../src/animations'
 import { motion } from 'framer-motion'
 import { works } from '../../src/data'
 import clsx from 'clsx'
-import { GitHub, BubbleChart, Cloud, MailOutline } from '@material-ui/icons'
+import { GitHub, BubbleChart, Cloud, MailOutline, AccountCircle } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
     panel: {
@@ -35,6 +35,8 @@ const useStyles = makeStyles((theme) => ({
     },
     workIcon: {
         height: 40,
+        fontSize: 50,
+        color: "#F3F3F4",
         marginRight: theme.spacing(2)
     },
     titleHolder: {
@@ -80,7 +82,7 @@ function Work() {
                 <Container maxWidth="sm" className={classes.root}>
                     <motion.div variants={item} className={classes.topBar}>
                         <div className={classes.titleHolder} >
-                            <img src={currentWork.icon} alt={currentWork.shortName} className={classes.workIcon} />
+                            <AccountCircle className={classes.workIcon} />
                             <Typography className={classes.workTitle}>{currentWork.name}</Typography>
                         </div>
                         <div className={classes.btnHolder}>
