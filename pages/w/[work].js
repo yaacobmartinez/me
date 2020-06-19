@@ -6,7 +6,7 @@ import { container, item } from '../../src/animations'
 import { motion } from 'framer-motion'
 import { works } from '../../src/data'
 import clsx from 'clsx'
-import { GitHub, BubbleChart, Cloud, MailOutline, AccountCircle } from '@material-ui/icons'
+import { GitHub, BubbleChart, Cloud, MailOutline } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
     panel: {
@@ -35,8 +35,6 @@ const useStyles = makeStyles((theme) => ({
     },
     workIcon: {
         height: 40,
-        fontSize: 50,
-        color: "#F3F3F4",
         marginRight: theme.spacing(2)
     },
     titleHolder: {
@@ -76,13 +74,14 @@ function Work() {
     const router = useRouter()
     const work = works.filter(work => work.shortName === router.query.work)
     const currentWork = work[0]
+    console.log(currentWork)
     return (
         <>
-            <motion.div variants={container} initial="hidden" animate="visible" className={classes.panel}>
+            {currentWork && <motion.div variants={container} initial="hidden" animate="visible" className={classes.panel}>
                 <Container maxWidth="sm" className={classes.root}>
                     <motion.div variants={item} className={classes.topBar}>
                         <div className={classes.titleHolder} >
-                            <AccountCircle className={classes.workIcon} />
+                            <img src={currentWork.icon} alt={currentWork.shortName} className={classes.workIcon} />
                             <Typography className={classes.workTitle}>{currentWork.name}</Typography>
                         </div>
                         <div className={classes.btnHolder}>
@@ -109,7 +108,7 @@ function Work() {
                         <Button variant="contained" className={classes.hireme} color="primary" startIcon={<MailOutline />}>Hire Me</Button>
                     </motion.div>
                 </Container>
-            </motion.div>
+            </motion.div>}
             <AppBottomNavigation />
         </>
     )
