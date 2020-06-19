@@ -1,7 +1,9 @@
 import React from 'react';
 import AppBottomNavigation from '../src/AppBottomNavigation';
-import { makeStyles, Typography, ListItem, ListItemText, Link, Fade, Slide } from '@material-ui/core';
-
+import { makeStyles, Typography, ListItem, ListItemText, Link } from '@material-ui/core';
+import { motion } from 'framer-motion'
+import { container, item } from '../src/animations'
+import { links } from '../src/data'
 const useStyles = makeStyles((theme) => ({
     panel: {
         height: "100vh",
@@ -44,37 +46,35 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
     }
 }))
-const links = [
-    { name: "_.Twitter", link: "https://twitter.com/theawkwardjacob" },
-    { name: "_.GitHub", link: "https://github.com/yaacobmartinez" },
-    { name: "_.Facebook", link: "https://www.facebook.com/jacobpogiako" },
-]
+
 export default function Contact() {
     const classes = useStyles()
     return (
         <>
-            <Slide in={true} timeout={300} >
-                <div className={classes.panel}>
-                    <Fade in={true} timeout={300}>
-                        <div className={classes.text}>
-                            <Typography className={classes.heroText} gutterBottom>
-                                I'm always happy to hear from you.
+            <motion.div variants={container}
+                initial="hidden"
+                animate="visible" className={classes.panel}>
+                <div className={classes.text}>
+                    <motion.div variants={item}>
+                        <Typography className={classes.heroText} gutterBottom>
+                            I'm always happy to hear from you.
                         </Typography>
-                            <Typography className={classes.subtext} gutterBottom>
-                                📮 martinezyaacob@gmail.com
-                        </Typography>
-                        </div>
-                    </Fade>
-                    <div className={classes.links}>
-                        {links.map(_ => (
-                            <div key={_.link} className={classes.prelink}>
-                                <Link href={_.link} className={classes.link}>{_.name}</Link>
-                            </div>
-                        ))}
-
-                    </div>
+                    </motion.div>
+                    <motion.div variants={item}>
+                        <Typography className={classes.subtext} gutterBottom>
+                            📮 martinezyaacob@gmail.com
+                    </Typography>
+                    </motion.div>
                 </div>
-            </Slide>
+                <motion.div variants={item} className={classes.links}>
+                    {links.map(_ => (
+                        <div key={_.link} className={classes.prelink}>
+                            <Link href={_.link} className={classes.link}>{_.name}</Link>
+                        </div>
+                    ))}
+
+                </motion.div>
+            </motion.div>
             <AppBottomNavigation />
         </>
     );
