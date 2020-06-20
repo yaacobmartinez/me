@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { works } from '../../src/data'
 import clsx from 'clsx'
 import { GitHub, BubbleChart, Cloud, MailOutline } from '@material-ui/icons'
+import Link from '../../src/Link'
 
 const useStyles = makeStyles((theme) => ({
     panel: {
@@ -105,7 +106,7 @@ function Work() {
                             <Typography style={{ fontFamily: "Poppins", fontSize: 16 }}>Like what you see?</Typography>
                             <Typography style={{ fontFamily: "Poppins", color: "#94D1D0", fontSize: 13 }}>I would love to discuss about work.</Typography>
                         </div>
-                        <Button variant="contained" className={classes.hireme} color="primary" startIcon={<MailOutline />}>Hire Me</Button>
+                        <Button component={Link} href="/contact" variant="contained" className={classes.hireme} color="primary" startIcon={<MailOutline />}>Hire Me</Button>
                     </motion.div>
                 </Container>
             </motion.div>}
