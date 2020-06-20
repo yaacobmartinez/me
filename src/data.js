@@ -106,7 +106,7 @@ export const works = [
         img: "/works/iplus.png",
         github: "https://github.com/yaacobmartinez/inventoryplus",
         liveSite: "https://inventory-plus.netlify.app/",
-        desc: "Inventory Plus is an inventory web application I made for my girlfriend's online business. ❤️❤️❤️",
+        desc: "Inventory Plus is an inventory web application I made for my girlfriend's online business ❤️❤️❤️. The app was made in NodeJS as its environment, StrapiCMS as its backend, ReactJS as its frontend library and Material UI as its frontend design.",
         icon: "/works/iplus-icon.png"
 
     },
@@ -116,7 +116,43 @@ export const works = [
         img: "/works/mbdo.png",
         github: "https://github.com/yaacobmartinez/mbdo.",
         liveSite: "https://mbdo.vercel.app/",
-        desc: "MBDO Tracking is a tracking web application for all the shipments made by the company.🚚🚚🚚",
+        desc: "MBDO Tracking is a tracking web application for all the shipments made by the company.🚚🚚🚚. The app was made in NodeJS as its environment, ExpressJS as its backend, MongoDB as its data store, React and NextJS as its frontend library and Material UI as its frontend design",
         icon: "/works/mbdo-icon.png"
+    },
+    {
+        name: "Studio Banx",
+        shortName: "banx",
+        img: "/works/banx.png",
+        github: "https://github.com/yaacobmartinez/studio-banx",
+        liveSite: "https://banx.vercel.app/",
+        desc: "Studio Banx is a landing page I made for a design company. The app was made in NodeJS as its environment, React and NextJS as its frontend library and Material UI as its frontend design",
+        icon: "/works/banx-icon.png"
+    },
+    {
+        name: "Student Council Vote",
+        shortName: "scvote",
+        img: "/works/scvote.png",
+        github: "https://github.com/yaacobmartinez/SCVote",
+        liveSite: "https://scvote.netlify.app/",
+        desc: "Student Council Vote is a voting web app I made for my former school. The app was made in NodeJS as its environment, ReactJS as its frontend library and Material UI as its frontend design",
+        icon: "/works/scvote-icon.png"
+    },
+    {
+        name: "Messaging App",
+        shortName: "msg",
+        img: "/works/msg.png",
+        github: "https://github.com/yaacobmartinez/react-messaging",
+        liveSite: "https://react-messaging.netlify.app/",
+        desc: "Messaging is a web app I made which is a mockup of Google Messages. The app was made in NodeJS as its environment, ReactJS as its frontend library and Material UI as its frontend design",
+        icon: "/works/msg-icon.png"
+    },
+    {
+        name: "TaskMaster",
+        shortName: "taskmaster",
+        img: "/works/taskmaster.png",
+        github: "https://github.com/yaacobmartinez/taskmaster",
+        liveSite: "https://taskmaster.jcbmtz.vercel.app/",
+        desc: "TaskMaster is a web app I made for simply taking down tasks. The app was made in NodeJS as its environment, ReactJS and NextJS as its frontend library and Material UI as its frontend design",
+        icon: "/works/taskmaster-icon.png"
     },
 ]
