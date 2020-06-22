@@ -8,6 +8,7 @@ import { works } from '../../src/data'
 import clsx from 'clsx'
 import { GitHub, BubbleChart, Cloud, MailOutline } from '@material-ui/icons'
 import Link from '../../src/Link'
+import ProgressiveImage from 'react-progressive-image'
 
 const useStyles = makeStyles((theme) => ({
     panel: {
@@ -75,7 +76,6 @@ function Work() {
     const router = useRouter()
     const work = works.filter(work => work.shortName === router.query.work)
     const currentWork = work[0]
-    console.log(currentWork)
     return (
         <>
             {currentWork && <motion.div variants={container} initial="hidden" animate="visible" className={classes.panel}>
@@ -91,7 +91,20 @@ function Work() {
                         </div>
                     </motion.div>
                     <motion.div variants={item} className={classes.imgHolder}>
-                        <motion.img whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} src={currentWork.src} className={classes.workImage} alt={currentWork.shortName} />
+                        <ProgressiveImage src={currentWork.src} placeholder={currentWork.img}>
+                            {(src, loading) => (
+                                <motion.img
+                                    variants={item}
+                                    whileHover={{ scale: 0.8 }}
+                                    whileTap={{ scale: 1, }}
+                                    className={classes.workImage}
+                                    style={{ opacity: loading ? 0.5 : 1 }}
+                                    src={src}
+                                    alt={currentWork.shortName}
+                                />
+                            )}
+                        </ProgressiveImage>
+                        {/* <motion.img whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} src={currentWork.src} className={classes.workImage} alt={currentWork.shortName} /> */}
                     </motion.div>
                     <motion.div variants={item} style={{ paddingBottom: 20 }}>
                         <Typography style={{ fontFamily: "Poppins", color: "#94D1D0", fontSize: 16 }}>

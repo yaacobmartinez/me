@@ -6,6 +6,7 @@ import { ArrowForward } from '@material-ui/icons';
 import Link from '../src/Link';
 import { motion } from 'framer-motion'
 import { container, item } from '../src/animations'
+import ProgressiveImage from 'react-progressive-image';
 const useStyles = makeStyles((theme) => ({
   image: {
     padding: theme.spacing(6),
@@ -78,9 +79,22 @@ export default function Index() {
   return (
     <>
       <motion.div variants={container}
+        style={{ overflowY: "hidden" }}
         initial="hidden"
         animate="visible" className={classes.panel}>
-        <motion.img variants={item} whileHover={{ scale: 0.8 }} whileTap={{ scale: 1, }} className={classes.image} src="/image.jpg" alt="an image of Yaacob Martinez, picture, image, photo" />
+        <ProgressiveImage src="https://i.imgur.com/SNwKMaF.jpg" placeholder="/image_tn.jpg">
+          {(src, loading) => (
+            <motion.img
+              variants={item}
+              whileHover={{ scale: 0.8 }}
+              whileTap={{ scale: 1, }}
+              className={classes.image}
+              style={{ opacity: loading ? 0.5 : 1 }}
+              src={src}
+              alt="an image of Yaacob Martinez, picture, image, photo"
+            />
+          )}
+        </ProgressiveImage>
         <div className={classes.text} >
           <motion.div variants={item}>
             <Typography className={classes.heroText} gutterBottom>

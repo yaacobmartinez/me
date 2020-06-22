@@ -7,9 +7,10 @@ import { links } from '../src/data'
 const useStyles = makeStyles((theme) => ({
     panel: {
         height: "100vh",
-        padding: theme.spacing(20, 2, 0, 18),
+        overflowX: "hidden",
+        padding: theme.spacing(15, 2, 0, 18),
         [theme.breakpoints.down('sm')]: {
-            padding: theme.spacing(15, 4, 0, 4)
+            padding: theme.spacing(12, 4, 0, 4)
         }
     },
     heroText: {
