@@ -2,6 +2,7 @@ export const links = [
     { name: "_.Twitter", link: "https://twitter.com/theawkwardjacob" },
     { name: "_.GitHub", link: "https://github.com/yaacobmartinez" },
     { name: "_.Facebook", link: "https://www.facebook.com/jacobpogiako" },
+    { name: "_.Mobile: +639159803576", link: "#" },
 ]
 
 export const experiences = [
