@@ -4,8 +4,8 @@ import { Typography, makeStyles, Grid, Avatar } from '@material-ui/core';
 import { motion } from 'framer-motion';
 import { container, item, image } from '../src/animations';
 import Link from '../src/Link';
-import { Person } from '@material-ui/icons';
 import { works } from '../src/data';
+// import ProgressiveImage from '../src/ProgressiveImage';
 
 const useStyles = makeStyles((theme) => ({
     panel: {
@@ -50,7 +50,8 @@ export default function Works() {
                     <Grid container spacing={4}>
                         {works.map(_ => (
                             <Grid key={_.shortName} item xs={12} sm={6} md={4} component={Link} as={`/w/${_.shortName}`} href="/w/[work]">
-                                <motion.img variants={image} whileHover={{ opacity: 1 }} src={_.img} className={classes.img} />
+                                {/* <ProgressiveImage className={classes.img} alt={_.shortName} overlaySrc={_.img} src={_.src} /> */}
+                                <motion.img variants={image} whileHover={{ opacity: 1 }} src={_.src} className={classes.img} />
                                 <motion.div variants={item} style={{ display: "flex", alignItems: "center", marginTop: -45, marginLeft: 10 }}>
                                     <Avatar className={classes.avatar} >
                                         <img src={_.icon} alt={_.shortName} style={{ height: 30 }} />

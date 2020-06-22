@@ -91,7 +91,7 @@ function Work() {
                         </div>
                     </motion.div>
                     <motion.div variants={item} className={classes.imgHolder}>
-                        <motion.img whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} src={currentWork.img} className={classes.workImage} alt={currentWork.shortName} />
+                        <motion.img whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} src={currentWork.src} className={classes.workImage} alt={currentWork.shortName} />
                     </motion.div>
                     <motion.div variants={item} style={{ paddingBottom: 20 }}>
                         <Typography style={{ fontFamily: "Poppins", color: "#94D1D0", fontSize: 16 }}>

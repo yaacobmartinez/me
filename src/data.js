@@ -104,7 +104,8 @@ export const works = [
     {
         name: "Inventory Plus",
         shortName: "iplus",
-        img: "/works/iplus.png",
+        img: "/works/iplus.jpg",
+        src: "https://i.imgur.com/cg8GsKi.png",
         github: "https://github.com/yaacobmartinez/inventoryplus",
         liveSite: "https://inventory-plus.netlify.app/",
         desc: "Inventory Plus is an inventory web application I made for my girlfriend's online business ❤️❤️❤️. The app was made in NodeJS as its environment, StrapiCMS as its backend, ReactJS as its frontend library and Material UI as its frontend design.",
@@ -114,7 +115,8 @@ export const works = [
     {
         name: "MBDO Tracking",
         shortName: "mbdo",
-        img: "/works/mbdo.png",
+        img: "/works/mbdo.jpg",
+        src: "https://i.imgur.com/LbdlDMJ.png",
         github: "https://github.com/yaacobmartinez/mbdo.",
         liveSite: "https://mbdo.vercel.app/",
         desc: "MBDO Tracking is a tracking web application for all the shipments made by the company.🚚🚚🚚. The app was made in NodeJS as its environment, ExpressJS as its backend, MongoDB as its data store, React and NextJS as its frontend library and Material UI as its frontend design",
@@ -123,7 +125,8 @@ export const works = [
     {
         name: "Studio Banx",
         shortName: "banx",
-        img: "/works/banx.png",
+        img: "/works/banx.jpg",
+        src: "https://i.imgur.com/0X3cdX9.png",
         github: "https://github.com/yaacobmartinez/studio-banx",
         liveSite: "https://banx.vercel.app/",
         desc: "Studio Banx is a landing page I made for a design company. The app was made in NodeJS as its environment, React and NextJS as its frontend library and Material UI as its frontend design",
@@ -132,7 +135,8 @@ export const works = [
     {
         name: "Student Council Vote",
         shortName: "scvote",
-        img: "/works/scvote.png",
+        img: "/works/scvote.jpg",
+        src: "https://i.imgur.com/QcpZxBh.png",
         github: "https://github.com/yaacobmartinez/SCVote",
         liveSite: "https://scvote.netlify.app/",
         desc: "Student Council Vote is a voting web app I made for my former school. The app was made in NodeJS as its environment, ReactJS as its frontend library and Material UI as its frontend design",
@@ -141,7 +145,8 @@ export const works = [
     {
         name: "Messaging App",
         shortName: "msg",
-        img: "/works/msg.png",
+        img: "/works/msg.jpg",
+        src: "https://i.imgur.com/hUzMrkF.png",
         github: "https://github.com/yaacobmartinez/react-messaging",
         liveSite: "https://react-messaging.netlify.app/",
         desc: "Messaging is a web app I made which is a mockup of Google Messages. The app was made in NodeJS as its environment, ReactJS as its frontend library and Material UI as its frontend design",
@@ -150,7 +155,8 @@ export const works = [
     {
         name: "TaskMaster",
         shortName: "taskmaster",
-        img: "/works/taskmaster.png",
+        img: "/works/taskmaster.jpg",
+        src: "https://i.imgur.com/fBsfo1o.png",
         github: "https://github.com/yaacobmartinez/taskmaster",
         liveSite: "https://taskmaster.jcbmtz.vercel.app/",
         desc: "TaskMaster is a web app I made for simply taking down tasks. The app was made in NodeJS as its environment, ReactJS and NextJS as its frontend library and Material UI as its frontend design",
