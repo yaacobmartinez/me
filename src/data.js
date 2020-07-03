@@ -135,7 +135,7 @@ export const works = [
 		icon: "/works/banx-icon.png",
 	},
 	{
-		name: "Datamex Saint Adeline Website",
+		name: "Saint Adeline Website",
 		shortName: "datamex",
 		img: "https://i.imgur.com/Nbv0Ghdt.jpg",
 		src: "https://i.imgur.com/Nbv0Ghd.jpg",
