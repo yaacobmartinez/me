@@ -178,4 +178,15 @@ export const works = [
 			"TaskMaster is a web app I made for simply taking down tasks. The app was made in NodeJS as its environment, ReactJS and NextJS as its frontend library and Material UI as its frontend design",
 		icon: "/works/taskmaster-icon.png",
 	},
+	{
+		name: "Leavify",
+		shortName: "leavify",
+		img: "https://i.imgur.com/XZbqqPyt.jpg",
+		src: "https://i.imgur.com/XZbqqPy.jpg",
+		github: "https://github.com/yaacobmartinez/leavify",
+		liveSite: "https://leavify.netlify.app/",
+		desc:
+			"Leavify is a leave filing web application I made. Employees sign in with their Company Google Account and file the leave. Data is then saved on a Google Sheet that HR can then review. The app was made in NodeJS as its environment, ReactJS as its frontend library and Material UI as its frontend design and Google Sheets API as its backend.",
+		icon: "https://i.imgur.com/piVgzuD.png",
+	},
 ];
