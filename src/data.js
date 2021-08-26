@@ -7,6 +7,33 @@ export const links = [
 
 export const experiences = [
 	{
+		position: "Software Engineer",
+		company: "Coinpass.com",
+		location: " ",
+		dates: "2020.12 - 2021.08",
+		desc: [
+			""
+		],
+	},
+	{
+		position: "Front End Web Developer",
+		company: "Dear Wolves",
+		location: " ",
+		dates: "2020.03 - 2020.10",
+		desc: [
+			""
+		],
+	},
+	{
+		position: "Senior Process Executive",
+		company: "Cognizant Technology Solutions",
+		location: " ",
+		dates: "2019.10 - 2020.02",
+		desc: [
+			""
+		],
+	},
+	{
 		position: "IT Lecturer/IT Coordinator",
 		company: "Informatics College",
 		location: "Caloocan",
