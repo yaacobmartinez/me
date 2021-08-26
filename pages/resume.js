@@ -51,7 +51,7 @@ export default function Resume() {
                         <Typography variant="h5" className={clsx(classes.font, classes.hasBottomMargin, classes.discreet)} >Creative, ambitious, and enterprising web developer. — I strive in teams with strong engineering cultures and meaningful cross-functional collaboration.</Typography>
                     </motion.div>
                     <motion.div variants={item}>
-                        <Typography variant="h6" className={clsx(classes.font, classes.hasBottomMargin, classes.blue)}>martinezyaacob@gmail.com</Typography>
+                        <Typography variant="h6" className={clsx(classes.font, classes.hasBottomMargin, classes.blue)}>martinezyaacob@gmail.com / +639159803576</Typography>
                     </motion.div>
                     <motion.div variants={item}>
                         <Typography gutterBottom variant="h6" className={clsx(classes.font, classes.blue)} style={{ fontSize: 30, }}>👔 Experience</Typography>

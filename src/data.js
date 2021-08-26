@@ -7,12 +7,15 @@ export const links = [
 
 export const experiences = [
 	{
-		position: "Software Engineer",
+		position: "Web Developer",
 		company: "Coinpass.com",
 		location: " ",
 		dates: "2020.12 - 2021.08",
 		desc: [
-			""
+			"Work with development teams and product managers to provide a sound software solution",
+			"Design client-side and server side architecture",
+			"Develop and manage well-function databases and applications",
+			"Test, troubleshoot, debug and upgrade software solutions"
 		],
 	},
 	{
@@ -21,7 +24,9 @@ export const experiences = [
 		location: " ",
 		dates: "2020.03 - 2020.10",
 		desc: [
-			""
+			"Participate in the planning, creation and development of the web applications needed by our clients.",
+			"Writing clean and functional code for both frontend and backend aspects of web applications",
+			"Testing and fixing bugs and other coding issues as they arise"
 		],
 	},
 	{
@@ -30,7 +35,9 @@ export const experiences = [
 		location: " ",
 		dates: "2019.10 - 2020.02",
 		desc: [
-			""
+			"Collaborate with engineers, developers and technical program managers to deliver high quality software products.",
+			"Operate and support these products throughout their lifecycle.",
+			"Design, develop, test, deploy, operate and support management solutions end-to-end across complex, secure public and private cloud environments from Salesforce."
 		],
 	},
 	{
