@@ -7,6 +7,16 @@ export const links = [
 
 export const experiences = [
 	{
+		position: "Software Engineer",
+		company: "360Logix Solutions Inc",
+		location: " ",
+		dates: "2021.09 - Present",
+		desc: [
+			"In charge of development of applications as requested by clients, such as, but not limited to, web, mobile and custom applications",
+			"Constantly communicate with project managers and clients to ensure projects are on track and meets the clients needs.",
+		],
+	},
+	{
 		position: "Web Developer",
 		company: "Coinpass.com",
 		location: " ",
