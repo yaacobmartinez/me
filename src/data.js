@@ -7,10 +7,22 @@ export const links = [
 
 export const experiences = [
 	{
+		position: "Front-End Developer",
+		company: "DevPartners Co.",
+		location: " ",
+		dates: "2022.07 - Present",
+		desc: [
+			"In charge with development of features of system applications",
+			"Involved in planning and development of feature improvements for existing website/applications",
+			"In charge of fixing issues/bugs/errors and attacks that may happen anytime",
+			"In charge of conceptualizing new and out-of-the-box ideas that will help with not just the development team but as the whole organization as well",
+		],
+	},
+	{
 		position: "Software Engineer",
 		company: "360Logix Solutions Inc",
 		location: " ",
-		dates: "2021.09 - Present",
+		dates: "2021.09 - 2022.07",
 		desc: [
 			"In charge of development of applications as requested by clients, such as, but not limited to, web, mobile and custom applications",
 			"Constantly communicate with project managers and clients to ensure projects are on track and meets the clients needs.",
